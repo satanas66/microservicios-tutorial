@@ -9,7 +9,6 @@ eureka:
     instance:
       hostname: localhost
 
-
 spring:
   cloud:
     gateway:
@@ -28,5 +27,4 @@ spring:
         - id: carro-service
           uri: lb://carro-service
           predicates:
-            - Path=/carro/**        
-    
+            - Path=/carro/**
