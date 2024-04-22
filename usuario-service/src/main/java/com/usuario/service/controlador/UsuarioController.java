@@ -81,7 +81,7 @@ public class UsuarioController {
 		return ResponseEntity.ok(nuevo);
 	}
 	
-	@CircuitBreaker(name="motosCB", fallbackMethod = "fallBackGetMoto")
+	@CircuitBreaker(name="motosCB", fallbackMethod = "fallBackSaveMoto")
 	@PostMapping("/moto/{usuarioId}")
 	public ResponseEntity<Moto> guardarMoto(@PathVariable("usuarioId") int usuarioId, @RequestBody Moto moto) {
 		Moto nuevo = usuarioService.saveMoto(usuarioId, moto);
