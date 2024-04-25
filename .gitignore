@@ -1,3 +1,5 @@
+zipkin-server-3.3.0-exec.jar
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
